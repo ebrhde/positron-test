@@ -19,5 +19,8 @@ return [
         'cache' => [
             'class' => \yii\caching\FileCache::class,
         ],
+        'setup' => [
+            'class' => 'common\components\SetupForm',
+        ],
     ],
 ];

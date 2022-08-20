@@ -1,0 +1,1 @@
+{"configPath":"@common\/config\/params-setup.php","books_limit":"10","feedback_email":"admin@positron-it.ru","source_url":"https:\/\/gitlab.com\/prog-positron\/test-app-vacancy\/-\/raw\/master\/books.json"}

@@ -49,7 +49,7 @@ AppAsset::register($this);
         'label' => 'Система',
         'items' => [
             ['label' => 'Формы обратной связи', 'url' => ['/feedback/index']],
-            ['label' => 'Настройки', 'url' => ['/setup/index']],
+            ['label' => 'Настройки', 'url' => ['/site/setup']],
         ], 'visible' => Yii::$app->user->can('admin')
     ];
     if (Yii::$app->user->isGuest) {
