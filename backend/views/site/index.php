@@ -32,10 +32,6 @@ $this->title = Yii::$app->name;
                     <div class="panel-heading"><h3>Система</h3></div>
                     <div class="panel-body">
                         <?php if (Yii::$app->user->can('admin')): ?>
-                            <h4>Обратная связь</h4>
-                            <ul>
-                                <li><?= Html::a('Формы обратной связи', ['feedback/index', 'type' => 'manager']); ?></li>
-                            </ul>
                             <h4>Настройки</h4>
                             <ul>
                                 <li><?= Html::a('Настройки', ['site/setup', 'type' => 'manager']); ?></li>

@@ -48,7 +48,6 @@ AppAsset::register($this);
     $menuItems[] = [
         'label' => 'Система',
         'items' => [
-            ['label' => 'Формы обратной связи', 'url' => ['/feedback/index']],
             ['label' => 'Настройки', 'url' => ['/site/setup']],
         ], 'visible' => Yii::$app->user->can('admin')
     ];
