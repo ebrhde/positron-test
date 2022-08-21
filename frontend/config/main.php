@@ -40,6 +40,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'catalog/<alias:([\w\d\-_]+)>' => 'catalog/index',
+                'catalog/<categoryAlias:([\w\d\-_]+)>/<alias:([\w\d\-_]+)>' => 'catalog/view',
             ],
         ],
     ],
