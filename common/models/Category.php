@@ -83,4 +83,15 @@ class Category extends \yii\db\ActiveRecord
     {
         return $this->hasMany(BookCategory::className(), ['category_id' => 'id']);
     }
+
+    public static function getStatuses()
+    {
+        return self::$_statuses;
+    }
+
+    public function getStatus($id = 0)
+    {
+        if (!$id) $id = $this->status_id;
+        return ((!empty(self::$_statuses[$id])) ? self::$_statuses[$id] : Yii::t('new', 'No Specify'));
+    }
 }
