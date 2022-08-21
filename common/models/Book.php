@@ -38,7 +38,7 @@ class Book extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'book';
+        return '{{%book}}';
     }
 
     public function behaviors()
