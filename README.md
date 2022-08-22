@@ -7,7 +7,7 @@
   <li>Склонировать проект и произвести подготовку кофигурации согласно <a href="https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide/2.0/en/start-installation">инструкции</a> по установке Yii2 Advanced</li>
   <li>Запустить команду composer install для установки зависимостей</li>
   <li>Запустить миграции командой php yii migrate</li>
-  <li>Зарегистрировать ползователя с email admin@positron.ru</li>
+  <li>Зарегистрировать ползователя с email admin@positron-it.ru</li>
   <li>Запустить команду php yii rbac/init для присвоения статуса админа пользователю</li>
   <li>Вписать в настройки проекта в админке ({адрес_backend}/site/setup) URL источника данных книг и лимит вывода на фронтенд</li>
   <li>Для парсинга книг запустить команду php yii book/parse</li>
