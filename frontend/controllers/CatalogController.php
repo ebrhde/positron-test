@@ -15,9 +15,11 @@ class CatalogController extends \yii\web\Controller
             throw new NotFoundHttpException('Категория не найдена');
         };
 
+        $limit = isset(\Yii::$app->setup['books_limit']) && \Yii::$app->setup['books_limit'] ? \Yii::$app->setup['books_limit'] : 10;
+
         $dataProvider = new ActiveDataProvider([
             'pagination' => [
-                'pageSize' => \Yii::$app->setup['books_limit']
+                'pageSize' => $limit
             ],
             'query' => Book::find()->alias('b')
                 ->joinWith('bookCategories bc')
